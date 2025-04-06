@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mkk007sa</title>
+    <link rel="icon" href="pro.jpg" type="image/png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home" class="logo">KATLEGO MANYAMA</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm KATLEGO 👋</h1>
+            <p>Full stack web Developer based in Pretoria, and I'm very passionate and dedicated to my work.</p>
+            <div class="social-links">
+                <a href="https://wa.me/+27797999519"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/katlego-manyama-304abb290?utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                <a href="http://www.facebook.com/realmkkza"><i class="fab fa-facebook"></i></a>
+            </div>
+            <br>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">Contact Info</a>
+                <a href="https://drive.google.com/file/d/13P1RzqB5_c7RY1bhC00usbVJCUf8_Rsm/view?usp=drive_link" class="btn">Download CV <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="port.png" alt="my profile">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <hr>
+        <h2>About Me</h2>
+        <p>Highly motivated and detail-oriented Web Developer Intern with a strong foundation in front-end and back-end development. Proficient in HTML, CSS, JavaScript, Node.js, Python, and SQL, with hands-on experience in building responsive web applications, user authentication systems, and database management. Passionate about problem-solving, continuous learning, and improving technical skills to stay updated with industry trends. Currently gaining practical experience to refine my expertise, with a long-term goal of transitioning into a junior web development role.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="circle" data-percentage="90">
+                    <span>HTML</span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="circle" data-percentage="85">
+                    <span>CSS</span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="circle" data-percentage="80">
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="circle" data-percentage="50">
+                    <span>React</span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="circle" data-percentage="50">
+                    <span>Python</span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="circle" data-percentage="50">
+                    <span>APIs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Check out my projects on <a href="#" target="_blank">GitHub</a>.</p>
+        <ul>
+            <li><a href="https://mkk007sa.github.io/calcccc/">Calculator</a></li>
+            <li><a href="https://mkk007sa.github.io/music/">Video App</a></li>
+            <li><a href="https://mkk007sa.github.io/airbnbzaio/">Airbnb</a></li>
+            <li><a href="https://mkk007sa.github.io/todoAPP/">Todo App</a></li>
+            <li><a href="https://mkk007sa.github.io/twttr/">twitter</a></li>
+            <li><a href="https://mkk007sa.github.io/netflix/">netflix</a></li>
+            <li><a href="https://mkk007sa.github.io/teslalandingp/">tesla</a></li>            
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p><a href="mailto:mkk007sa@gmail.com?subject=Hello%20there&body=I%20would%20like%20to%20contact%20you"> Email: mkk007sa@gmail.com</a></p>
+        <p><a href="tel:+27797999519">Phone: +27 79 7999 519</a></p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/katlego-manyama-304abb290?utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-mail"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 KATLEGO. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Add smooth scroll behavior
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Sticky Navigation
+        window.onscroll = function() { stickyNav() };
+
+        var navbar = document.querySelector("nav");
+        var sticky = navbar.offsetTop;
+
+        function stickyNav() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
